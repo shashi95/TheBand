@@ -1,5 +1,5 @@
 <?php
-if(!mysql_connect("mysql://$OPENSHIFT_MYSQL_DB_HOST:$OPENSHIFT_MYSQL_DB_PORT/theband","admingB5zzLW","atNb-_XCQKV9"))
+if(!mysql_connect("mysql://$OPENSHIFT_MYSQL_DB_HOST:$OPENSHIFT_MYSQL_DB_PORT/theband","adminyUTgHVY","mMiR4PmxAA17"))
 {
      die('oops connection problem ! --> '.mysql_error());
 }
