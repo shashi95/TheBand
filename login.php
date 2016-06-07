@@ -1,10 +1,10 @@
 <?php
 session_start();
-include_once 'dbconnect.php';
+include_once 'Dbconnect.php';
 
 if(isset($_SESSION['user'])!="")
 {
- header("Location: home.php");
+ header("Location: Home.php");
 }
 if(isset($_POST['btn-login']))
 {
@@ -15,7 +15,7 @@ if(isset($_POST['btn-login']))
  if($row['password']==md5($upass))
  {
   $_SESSION['user'] = $row['user_id'];
-  header("Location: home.php");
+  header("Location: Home.php");
  }
  else
  {
@@ -31,7 +31,7 @@ if(isset($_POST['btn-login']))
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>cleartuts - Login & Registration System</title>
-<link rel="stylesheet" href="style.css" type="text/css" />
+<link rel="stylesheet" href="Style.css" type="text/css" />
 </head>
 <body>
 <center>
@@ -48,7 +48,7 @@ if(isset($_POST['btn-login']))
 <td><button type="submit" name="btn-login">Sign In</button></td>
 </tr>
 <tr>
-<td><a href="register.php">Sign Up Here</a></td>
+<td><a href="Register.php">Sign Up Here</a></td>
 </tr>
 </table>
 </form>
