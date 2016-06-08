@@ -3,7 +3,7 @@ if(!mysql_connect("mysql://$OPENSHIFT_MYSQL_DB_HOST:$OPENSHIFT_MYSQL_DB_PORT/the
 {
      die('oops connection problem ! --> '.mysql_error());
 }
-if(!mysql_select_db("dbtest"))
+if(!mysql_select_db("theband"))
 {
      die('oops database selection problem ! --> '.mysql_error());
 }
